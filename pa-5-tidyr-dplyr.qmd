@@ -130,7 +130,7 @@ military_clean <- military |>
 
 **2. Write a sentence describing what the line of code `filter(!Country %in% regions)` is doing in the context of the data.**  
 
->Insert Answer Here
+>This code checks the variable "Country" against the strings in "reigons" and removes any that match from "Country."
 
 
 ### Canvas Question #1

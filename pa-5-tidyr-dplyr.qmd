@@ -180,7 +180,11 @@ Hint: **Do not** overwrite your cleaned up dataset!
 ```{r}
 #| label: pivoting-military-data-longer
 
-
+military_long <-
+  military_clean |>
+  pivot_longer(cols = 4:35, 
+               names_to = "year",
+               values_to = "spending")
 ```
 
 

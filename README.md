@@ -2,3 +2,5 @@
 Week 8 In-Class Activity: Military Spending
 
 1. Added .qmd and .xlsx files, created data folder
+
+2. completed activity

@@ -219,6 +219,22 @@ eastern_europe <- c("Armenia",
 
 # Hint - look at the code chunk `filter-regions` and Question 2 for code similar to what you will want to use to filter out just these countries.  
 
+military_long %>% 
+  filter(Country %in% eastern_europe) %>% 
+  ggplot() +
+  geom_boxplot(mapping = aes(x = spending,
+                             y = Country)) +
+  geom_point(mapping = aes(x = spending,
+                           y = Country,
+                           color = "orange",
+                           alpha = 0.5),
+             show.legend = FALSE)+
+  theme_light() +
+  labs(x = "Military Spending as % of Total Government Spending",
+       y = "")
+  
+  
+
 ```
 
 ### Canvas Question 2 & Question 3
